@@ -1,0 +1,38 @@
+Spring Framework => Creates instances of Objects, and populates dependencies
+  Dependency injection Framework
+
+  My job => tell Spring what objects it needs to manage, and what are the dependencies of each class.
+
+Question - How does Spring know to create a certain instance of an object?
+
+Question - How does it know to create some instances and populate others?
+
+Annotations:
+
+  @COMPONENT:
+    Start manages instances of these classes. Creates instances of this class for you.
+
+  @AUTOWIRED
+    Start looking for this dependency among the components. Tells Spring that the instance labeled as Autowired is a Dependency of the class it is in.
+
+Annotations determine how Spring maintains your code. Components are instances that Spring is creating and managing. The Auto wire tag tells Spring that something is a Dependency of that class.
+
+Terminology:
+
+  Beans:
+    Instances and objects managed by the Spring Framework
+
+  Autowiring:
+    the process where Spring identifies the dependencies, the matches for the dependencies, and populates the matches.
+
+  Dependency Injection:
+    injecting dependencies into instances
+
+  Inversion of Control:
+    when the class that needs a dependency is no longer controlled by the class, and is now controlled by the Spring Framework
+
+  IOC Container
+    Inversion of Control container: generic terminology to represent anything implementing inversion of control
+
+  Application Contexts
+    An IOC container where all beans are maintained and managed. All core logic of Spring happens here.
